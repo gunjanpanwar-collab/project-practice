@@ -1,0 +1,863 @@
+/* =========================================================
+   VIKRAYANAM
+   AGRICULTURAL MARKETPLACE
+   MAIN STYLESHEET
+========================================================= */
+
+/* =========================================================
+   BASIC RESET
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Inter", Arial, sans-serif;
+    background: radial-gradient(circle at top, #46354f 0%, #21182b 45%, #0b0a15 100%);
+    color: #111;
+    min-height: 100vh;
+}
+
+/* =========================================================
+   APP
+========================================================= */
+
+.app {
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.top-header {
+    min-height: 150px;
+    padding: 28px 5%;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    border-bottom: 3px solid white;
+    background: linear-gradient(110deg, #0c0b17, #24182d, #35253d);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+}
+
+/* =========================================================
+   BRAND
+========================================================= */
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+.brand-logo {
+    width: 82px;
+    height: 82px;
+    border-radius: 50%;
+    background: #fff;
+    border: 4px solid #182348;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-shadow: 0 0 0 3px #f3d27b;
+}
+
+.logo-v {
+    font-size: 42px;
+    font-weight: 900;
+    color: #192448;
+}
+
+.logo-leaf {
+    position: absolute;
+    font-size: 18px;
+    top: 8px;
+    right: 15px;
+    color: #1e315d;
+}
+
+.brand-name h1 {
+    color: white;
+    font-size: 17px;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+.brand-name p {
+    color: #ddd;
+    font-size: 11px;
+    margin-top: 3px;
+}
+
+/* =========================================================
+   SELL BUTTON
+========================================================= */
+
+.sell-button {
+    height: 64px;
+    min-width: 168px;
+    border-radius: 18px;
+    border: 3px solid #14214b;
+    background: white;
+    color: #111;
+    font-size: 25px;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: 0.2s ease;
+    box-shadow: 0 4px 0 #14214b;
+}
+
+.sell-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 7px 0 #14214b;
+}
+
+.sell-button:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 0 #14214b;
+}
+
+.plus-symbol {
+    font-size: 38px;
+    line-height: 1;
+}
+
+/* =========================================================
+   SEARCH BAR
+========================================================= */
+
+.search-container {
+    flex: 1;
+    height: 64px;
+    min-width: 250px;
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 15px;
+    border: 3px solid #17224c;
+    padding: 5px 8px;
+}
+
+.search-icon {
+    font-size: 43px;
+    line-height: 1;
+    transform: rotate(-20deg);
+    margin-left: 12px;
+    color: #111;
+}
+
+.search-container input {
+    flex: 1;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding: 0 15px;
+    color: #111;
+}
+
+.search-container input::placeholder {
+    color: #000000;
+}
+
+.search-button {
+    height: 48px;
+    padding: 0 18px;
+    border: 2px solid #16234f;
+    border-radius: 12px;
+    background: #eee;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background: #dedede;
+}
+
+/* =========================================================
+   LANGUAGE
+========================================================= */
+
+.language-button {
+    width: 70px;
+    height: 70px;
+    border: none;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    font-weight: 900;
+}
+
+.language-button span {
+    font-size: 38px;
+}
+
+.language-button small {
+    font-size: 25px;
+}
+
+/* =========================================================
+   PROFILE
+========================================================= */
+
+.profile-button {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: none;
+    background: white;
+    color: #111;
+    font-size: 36px;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+/* =========================================================
+   CATEGORY BAR
+========================================================= */
+
+.category-bar {
+    min-height: 92px;
+    padding: 16px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    background: linear-gradient(90deg, #0e0d17, #33263c, #15121e);
+    border-bottom: 3px solid white;
+    overflow-x: auto;
+}
+
+.category-button {
+    background-color: #ffffff !important;
+    color: #000000;
+    border: 3px solid #000000;
+    border-radius: 15px;
+    min-height: 52px;
+    padding: 0 28px;
+    font-size: 20px;
+    font-weight: 800;
+    white-space: nowrap;
+    cursor: pointer;
+    box-shadow: 0 3px 0 #000000;
+    transition: 0.2s ease;
+}
+
+.category-button:hover {
+    transform: translateY(-2px);
+}
+
+.category-button.active {
+    background: #e4dfe1;
+    box-shadow: 0 3px 0 #000000, inset 0 0 0 2px #000000;
+}
+
+/* =========================================================
+   MAIN CONTENT
+========================================================= */
+
+.main-content {
+    width: 90%;
+    max-width: 1500px;
+    margin: auto;
+    padding: 42px 0 70px;
+}
+
+/* =========================================================
+   WELCOME SECTION
+========================================================= */
+
+.welcome-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-bottom: 35px;
+}
+
+.small-heading {
+    color: #d8d1dd;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    margin-bottom: 8px;
+}
+
+.welcome-section h2 {
+    color: white;
+    font-size: clamp(32px, 4vw, 50px);
+    line-height: 1;
+    font-weight: 900;
+}
+
+.welcome-section h2 span {
+    color: #eee;
+}
+
+.welcome-text {
+    margin-top: 12px;
+    color: #d3ccd8;
+    font-size: 16px;
+}
+
+/* =========================================================
+   LOCATION
+========================================================= */
+
+.location-button {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 20px;
+    background: white;
+    border: 3px solid #15204a;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.location-button > span {
+    font-size: 30px;
+}
+
+.location-button small {
+    display: block;
+    color: #777;
+    text-align: left;
+}
+
+.location-button strong {
+    display: block;
+    font-size: 15px;
+    margin-top: 2px;
+}
+
+/* =========================================================
+   LISTING GRID
+========================================================= */
+
+.listing-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 28px 20px;
+}
+
+/* =========================================================
+   LISTING CARD
+========================================================= */
+
+.listing-card {
+    position: relative;
+    background: #f8f7f7;
+    border-radius: 18px;
+    padding: 10px;
+    min-width: 0;
+    box-shadow: 0 18px 30px rgba(0, 0, 0, 0.25);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.listing-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 25px 40px rgba(0, 0, 0, 0.35);
+}
+
+/* =========================================================
+   IMAGE AREA
+========================================================= */
+
+.image-container {
+    height: 215px;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    background: #ddd;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* =========================================================
+   PLUS BUTTON
+========================================================= */
+
+.card-plus {
+    position: absolute;
+    top: 17px;
+    right: 17px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: white;
+    border: 3px solid #17224c;
+    font-size: 32px;
+    font-weight: 400;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+    transition: 0.2s ease;
+}
+
+.card-plus:hover {
+    transform: rotate(90deg) scale(1.08);
+}
+
+/* =========================================================
+   FEATURED BADGE
+========================================================= */
+
+.featured-badge {
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    transform: translateY(50%);
+    background: linear-gradient(90deg, #291538, #171126);
+    color: white;
+    padding: 8px 25px;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: 800;
+    z-index: 5;
+}
+
+/* =========================================================
+   CARD INFORMATION
+========================================================= */
+
+.card-info {
+    padding: 24px 12px 13px;
+}
+
+.price {
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+.price small {
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.item-title {
+    font-size: 17px;
+    font-weight: 500;
+    min-height: 42px;
+}
+
+.item-location {
+    color: #666;
+    font-size: 13px;
+    margin-top: 8px;
+}
+
+.item-type {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 12px;
+    background: #e8e4e5;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 800;
+}
+
+/* =========================================================
+   NO RESULTS
+========================================================= */
+
+.no-results {
+    display: none;
+    text-align: center;
+    padding: 80px 20px;
+    color: white;
+}
+
+.no-results-icon {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.no-results h3 {
+    font-size: 25px;
+}
+
+.no-results p {
+    color: #bbb;
+    margin-top: 8px;
+}
+
+/* =========================================================
+   FLOATING BUTTONS
+========================================================= */
+
+.floating-actions {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.floating-button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 3px solid #15204a;
+    background: white;
+    font-size: 22px;
+    font-weight: 900;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* =========================================================
+   MODAL BACKGROUND
+========================================================= */
+
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(8, 6, 15, 0.78);
+    backdrop-filter: blur(8px);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    z-index: 1000;
+}
+
+.modal-overlay.show {
+    display: flex;
+}
+
+/* =========================================================
+   DETAILS MODAL
+========================================================= */
+
+.details-modal {
+    position: relative;
+    width: min(900px, 100%);
+    background: #f8f7f7;
+    border-radius: 25px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-shadow: 0 30px 80px rgba(0,0,0,0.5);
+}
+
+.details-modal > img {
+    width: 100%;
+    height: 100%;
+    min-height: 430px;
+    object-fit: cover;
+}
+
+.modal-content {
+    padding: 45px 35px;
+}
+
+.close-modal {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 3px solid #17224c;
+    background: white;
+    font-size: 30px;
+    line-height: 1;
+    cursor: pointer;
+    z-index: 20;
+}
+
+.modal-category {
+    display: inline-block;
+    padding: 7px 15px;
+    background: #2a1837;
+    color: white;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.modal-content h2 {
+    margin-top: 18px;
+    font-size: 34px;
+}
+
+.modal-price {
+    font-size: 38px;
+    font-weight: 900;
+    margin-top: 15px;
+}
+
+.modal-price small {
+    font-size: 16px;
+}
+
+.modal-content > p {
+    margin-top: 18px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.modal-location {
+    display: flex;
+    gap: 8px;
+    margin-top: 20px;
+    font-weight: 700;
+}
+
+.modal-actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 30px;
+}
+
+.primary-action,
+.secondary-action {
+    flex: 1;
+    padding: 14px;
+    border-radius: 12px;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.primary-action {
+    background: #251432;
+    color: white;
+    border: 3px solid #251432;
+}
+
+.secondary-action {
+    background: white;
+    color: #171126;
+    border: 3px solid #171126;
+}
+
+/* =========================================================
+   SELL MODAL
+========================================================= */
+
+.sell-modal {
+    width: min(520px, 100%);
+    max-height: 90vh;
+    overflow-y: auto;
+    background: #f8f7f7;
+    border-radius: 25px;
+    padding: 35px;
+    position: relative;
+}
+
+.sell-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.sell-icon {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background: #251432;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+}
+
+.sell-header h2 {
+    font-size: 28px;
+}
+
+.sell-header p {
+    color: #777;
+    margin-top: 3px;
+}
+
+#sellForm {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+#sellForm label {
+    font-weight: 800;
+    margin-top: 8px;
+}
+
+#sellForm input,
+#sellForm select {
+    width: 100%;
+    height: 48px;
+    padding: 0 13px;
+    border-radius: 10px;
+    border: 2px solid #17224c;
+    background: white;
+    font-size: 15px;
+    outline: none;
+}
+
+#sellForm input:focus,
+#sellForm select:focus {
+    box-shadow: 0 0 0 3px rgba(50, 30, 70, 0.2);
+}
+
+.submit-listing {
+    margin-top: 18px;
+    height: 52px;
+    border-radius: 12px;
+    border: 3px solid #17224c;
+    background: #251432;
+    color: white;
+    font-size: 16px;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+/* =========================================================
+   NOTIFICATION
+========================================================= */
+
+.notification {
+    position: fixed;
+    left: 50%;
+    bottom: 30px;
+    transform: translate(-50%, 100px);
+    background: #fff;
+    color: #111;
+    padding: 15px 25px;
+    border-radius: 12px;
+    border: 3px solid #17224c;
+    font-weight: 800;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    transition: 0.3s ease;
+    z-index: 2000;
+}
+
+.notification.show {
+    transform: translate(-50%, 0);
+}
+
+/* =========================================================
+   RESPONSIVE DESIGN
+========================================================= */
+
+@media (max-width: 1200px) {
+    .top-header {
+        flex-wrap: wrap;
+    }
+
+    .search-container {
+        order: 3;
+        flex-basis: 100%;
+    }
+
+    .listing-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 850px) {
+    .listing-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .brand-name {
+        display: none;
+    }
+
+    .welcome-section {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .details-modal {
+        grid-template-columns: 1fr;
+        max-height: 90vh;
+        overflow-y: auto;
+    }
+
+    .details-modal > img {
+        min-height: 250px;
+        max-height: 300px;
+    }
+}
+
+@media (max-width: 600px) {
+    .top-header {
+        padding: 18px;
+    }
+
+    .brand-logo {
+        width: 62px;
+        height: 62px;
+    }
+
+    .sell-button {
+        min-width: 110px;
+        height: 55px;
+        font-size: 18px;
+    }
+
+    .language-button {
+        display: none;
+    }
+
+    .profile-button {
+        width: 55px;
+        height: 55px;
+        font-size: 25px;
+    }
+
+    .category-bar {
+        padding: 12px 18px;
+        justify-content: flex-start;
+    }
+
+    .category-button {
+        font-size: 15px;
+        padding: 0 18px;
+    }
+
+    .main-content {
+        width: 94%;
+        padding-top: 30px;
+    }
+
+    .listing-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .image-container {
+        height: 240px;
+    }
+
+    .modal-content {
+        padding: 30px 22px;
+    }
+}
